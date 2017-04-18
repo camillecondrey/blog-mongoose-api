@@ -11,7 +11,7 @@ blogSchema.virtual('authorString').get(function() {
   return `${this.author.firstName} ${this.author.lastName}`.trim()});
 
 
-restaurantSchema.methods.apiRepr = function() {
+blogSchema.methods.apiRepr = function() {
 
   return {
     id: this._id,
